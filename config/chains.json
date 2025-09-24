@@ -1,0 +1,64 @@
+{
+  "chains": [
+    {
+      "chainId": 1,
+      "chainName": "ethereum",
+      "rpcUrl": "https://ethereum.publicnode.com",
+      "sourcifyRepoUrls": [
+        "https://repo.sourcify.dev"
+      ],
+      "ipfsGateways": [
+        "https://ipfs.io/ipfs"
+      ],
+      "trackedContracts": []
+    },
+    {
+      "chainId": 137,
+      "chainName": "polygon",
+      "rpcUrl": "https://polygon.publicnode.com",
+      "sourcifyRepoUrls": [
+        "https://repo.sourcify.dev"
+      ],
+      "ipfsGateways": [
+        "https://ipfs.io/ipfs"
+      ],
+      "trackedContracts": []
+    },
+    {
+      "chainId": 42161,
+      "chainName": "arbitrum",
+      "rpcUrl": "https://arbitrum.publicnode.com",
+      "sourcifyRepoUrls": [
+        "https://repo.sourcify.dev"
+      ],
+      "ipfsGateways": [
+        "https://ipfs.io/ipfs"
+      ],
+      "trackedContracts": []
+    },
+    {
+      "chainId": 10,
+      "chainName": "optimism",
+      "rpcUrl": "https://optimism.publicnode.com",
+      "sourcifyRepoUrls": [
+        "https://repo.sourcify.dev"
+      ],
+      "ipfsGateways": [
+        "https://ipfs.io/ipfs"
+      ],
+      "trackedContracts": []
+    },
+    {
+      "chainId": 8453,
+      "chainName": "base",
+      "rpcUrl": "https://base.publicnode.com",
+      "sourcifyRepoUrls": [
+        "https://repo.sourcify.dev"
+      ],
+      "ipfsGateways": [
+        "https://ipfs.io/ipfs"
+      ],
+      "trackedContracts": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "uniswap-v3",
+  "description": "Uniswap V3 core contracts",
+  "contracts": [
+    {
+      "alias": "uniswap-v3-factory",
+      "address": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+      "tags": ["dex", "factory"],
+      "notes": "Uniswap V3 Factory contract"
+    },
+    {
+      "alias": "uniswap-v3-router",
+      "address": "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+      "tags": ["dex", "router"],
+      "notes": "Uniswap V3 SwapRouter contract"
+    },
+    {
+      "alias": "uniswap-v3-router-02",
+      "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+      "tags": ["dex", "router"],
+      "notes": "Uniswap V3 SwapRouter02 contract"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "core-tokens",
+  "description": "Core ERC-20 tokens",
+  "contracts": [
+    {
+      "alias": "weth9",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "tags": ["token", "wrapped-eth"],
+      "notes": "Wrapped Ethereum (WETH9)"
+    },
+    {
+      "alias": "usdc",
+      "address": "0xA0b86a33E6411Bf3d4c0e60b48Fe3Bc6b84ED4d2",
+      "tags": ["token", "stablecoin"],
+      "notes": "USD Coin (USDC)"
+    },
+    {
+      "alias": "usdt",
+      "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+      "tags": ["token", "stablecoin"],
+      "notes": "Tether USD (USDT)"
+    }
+  ]
+}
