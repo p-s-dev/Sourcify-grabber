@@ -1,0 +1,51 @@
+{
+  "name": "sourcify-grabber",
+  "version": "1.0.0",
+  "description": "Production-grade Node.js app for building and maintaining offline archives of Ethereum smart contracts from Sourcify",
+  "type": "module",
+  "main": "src/cli.js",
+  "bin": {
+    "sourcify-grabber": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js --help",
+    "clean": "rm -rf data/ cache/ logs/ exports/",
+    "lint": "echo 'Linting would run here'",
+    "test": "node --test test/**/*.test.js",
+    "build": "echo 'No build step needed for pure Node.js'",
+    "demo": "bash scripts/demo.sh",
+    "init-chain": "node src/cli.js init-chain",
+    "add-contract": "node src/cli.js add-contract",
+    "remove-contract": "node src/cli.js remove-contract",
+    "fetch": "node src/cli.js fetch",
+    "refresh": "node src/cli.js refresh",
+    "validate": "node src/cli.js validate",
+    "diff": "node src/cli.js diff",
+    "export": "node src/cli.js export",
+    "switch-set": "node src/cli.js switch-set",
+    "list": "node src/cli.js list",
+    "status": "node src/cli.js status"
+  },
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "sourcify",
+    "abi",
+    "archive",
+    "blockchain",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ajv": "^8.12.0",
+    "commander": "^11.1.0",
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
