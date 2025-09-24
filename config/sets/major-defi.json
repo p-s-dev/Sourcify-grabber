@@ -1,0 +1,90 @@
+{
+  "name": "major-defi",
+  "description": "Major DeFi protocols including lending, yield, and aggregators",
+  "contracts": [
+    {
+      "alias": "aave-v3-pool",
+      "address": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2",
+      "tags": ["lending", "defi", "aave"],
+      "notes": "Aave V3 Pool - main lending pool contract"
+    },
+    {
+      "alias": "aave-v2-lending-pool",
+      "address": "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
+      "tags": ["lending", "defi", "aave"],
+      "notes": "Aave V2 Lending Pool"
+    },
+    {
+      "alias": "compound-comptroller",
+      "address": "0x3d9819210A31b4961b30EF54bE2aeD79B9c9Cd3B",
+      "tags": ["lending", "defi", "compound"],
+      "notes": "Compound Comptroller - risk management"
+    },
+    {
+      "alias": "compound-cusdc",
+      "address": "0x39AA39c021dfbaE8faC545936693aC917d5E7563",
+      "tags": ["lending", "defi", "compound"],
+      "notes": "Compound cUSDC token"
+    },
+    {
+      "alias": "compound-ceth",
+      "address": "0x4Ddc2D193948926D02f9B1fE9e1daa0718270ED5",
+      "tags": ["lending", "defi", "compound"],
+      "notes": "Compound cETH token"
+    },
+    {
+      "alias": "makerdao-vat",
+      "address": "0x35D1b3F3D7966A1DFe207aa4514C12a259A0492B",
+      "tags": ["stablecoin", "defi", "makerdao"],
+      "notes": "MakerDAO Vat - core CDP engine"
+    },
+    {
+      "alias": "makerdao-cdp-manager",
+      "address": "0x5ef30b9986345249bc32d8928B7ee64DE9435E39",
+      "tags": ["stablecoin", "defi", "makerdao"],
+      "notes": "MakerDAO CDP Manager"
+    },
+    {
+      "alias": "yearn-dai-vault",
+      "address": "0x19D3364A399d251E894aC732651be8B0E4e85001",
+      "tags": ["yield", "defi", "yearn"],
+      "notes": "Yearn DAI Vault v2"
+    },
+    {
+      "alias": "yearn-usdc-vault",
+      "address": "0xa354F35829Ae975e850e23e9615b11Da1B3dC4DE",
+      "tags": ["yield", "defi", "yearn"],
+      "notes": "Yearn USDC Vault v2"
+    },
+    {
+      "alias": "lido-steth",
+      "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+      "tags": ["staking", "defi", "lido"],
+      "notes": "Lido Staked Ether contract"
+    },
+    {
+      "alias": "lido-withdrawal-queue",
+      "address": "0x889edC2eDab5f40e902b864aD4d7AdE8E412F9B1",
+      "tags": ["staking", "defi", "lido"],
+      "notes": "Lido Withdrawal Queue for stETH unstaking"
+    },
+    {
+      "alias": "convex-booster",
+      "address": "0xF403C135812408BFbE8713b5A23a04b3D48AAE31",
+      "tags": ["yield", "defi", "convex"],
+      "notes": "Convex Finance Booster - main staking contract"
+    },
+    {
+      "alias": "1inch-aggregation-router-v5",
+      "address": "0x1111111254EEB25477B68fb85Ed929f73A960582",
+      "tags": ["aggregator", "defi", "1inch"],
+      "notes": "1inch Aggregation Router V5"
+    },
+    {
+      "alias": "1inch-aggregation-router-v4",
+      "address": "0x1111111254fb6c44bAC0beD2854e76F90643097d",
+      "tags": ["aggregator", "defi", "1inch"],
+      "notes": "1inch Aggregation Router V4"
+    }
+  ]
+}

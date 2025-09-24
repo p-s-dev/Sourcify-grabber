@@ -1,0 +1,90 @@
+{
+  "name": "bridges-crosschain",
+  "description": "Bridge protocols and cross-chain infrastructure",
+  "contracts": [
+    {
+      "alias": "layerzero-endpoint",
+      "address": "0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675",
+      "tags": ["bridge", "layerzero", "messaging"],
+      "notes": "LayerZero Endpoint V1 on Ethereum"
+    },
+    {
+      "alias": "stargate-router",
+      "address": "0x8731d54E9D02c286767d56ac03e8037C07e01e98",
+      "tags": ["bridge", "stargate", "layerzero"],
+      "notes": "Stargate Router for cross-chain transfers"
+    },
+    {
+      "alias": "stargate-factory",
+      "address": "0x06D538690AF257Da524f25D0CD52fD85b1c2173E",
+      "tags": ["bridge", "stargate", "factory"],
+      "notes": "Stargate Factory"
+    },
+    {
+      "alias": "across-spokepool",
+      "address": "0x5c7BCd6E7De5423a257D81B442095A1a6ced35C5",
+      "tags": ["bridge", "across", "optimistic"],
+      "notes": "Across Ethereum SpokePool"
+    },
+    {
+      "alias": "hop-l1-bridge-usdc",
+      "address": "0x3666f603Cc164936C1b87e207F36BEBa4AC5f18a",
+      "tags": ["bridge", "hop", "usdc"],
+      "notes": "Hop USDC L1 Bridge"
+    },
+    {
+      "alias": "hop-l1-bridge-eth",
+      "address": "0xb8901acB165ed027E32754E0FFe830802919727f",
+      "tags": ["bridge", "hop", "eth"],
+      "notes": "Hop ETH L1 Bridge"
+    },
+    {
+      "alias": "synapse-bridge",
+      "address": "0x2796317b0fF8538F253012862c06787Adfb8cEb6",
+      "tags": ["bridge", "synapse"],
+      "notes": "Synapse Bridge contract"
+    },
+    {
+      "alias": "arbitrum-l1-gateway-router",
+      "address": "0x72Ce9c846789fdB6fC1f34aC4AD25Dd9ef7031ef",
+      "tags": ["bridge", "arbitrum", "gateway"],
+      "notes": "Arbitrum L1 Gateway Router"
+    },
+    {
+      "alias": "arbitrum-delayed-inbox",
+      "address": "0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f",
+      "tags": ["bridge", "arbitrum", "inbox"],
+      "notes": "Arbitrum Delayed Inbox"
+    },
+    {
+      "alias": "optimism-l1-standard-bridge",
+      "address": "0x99C9fc46f92E8a1c0deC1b1747d010903E884bE1",
+      "tags": ["bridge", "optimism"],
+      "notes": "Optimism L1 Standard Bridge"
+    },
+    {
+      "alias": "polygon-pos-bridge",
+      "address": "0xA0c68C638235ee32657e8f720a23ceC1bFc77C77",
+      "tags": ["bridge", "polygon", "pos"],
+      "notes": "Polygon PoS Bridge"
+    },
+    {
+      "alias": "polygon-root-chain-manager",
+      "address": "0xA0c68C638235ee32657e8f720a23ceC1bFc77C77",
+      "tags": ["bridge", "polygon", "manager"],
+      "notes": "Polygon Root Chain Manager"
+    },
+    {
+      "alias": "wormhole-bridge",
+      "address": "0x98f3c9e6E3fAce36bAADC96533B9a5d04cf2D52F",
+      "tags": ["bridge", "wormhole"],
+      "notes": "Wormhole Bridge Core"
+    },
+    {
+      "alias": "multichain-router",
+      "address": "0x6b7a87899490EcE95443e979cA9485CBE7E71522",
+      "tags": ["bridge", "multichain", "router"],
+      "notes": "Multichain Router V4"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "dex-amm",
+  "description": "Decentralized exchanges and automated market makers",
+  "contracts": [
+    {
+      "alias": "uniswap-v2-factory",
+      "address": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+      "tags": ["dex", "factory", "uniswap"],
+      "notes": "Uniswap V2 Factory"
+    },
+    {
+      "alias": "uniswap-v2-router",
+      "address": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+      "tags": ["dex", "router", "uniswap"],
+      "notes": "Uniswap V2 Router"
+    },
+    {
+      "alias": "uniswap-v3-factory",
+      "address": "0x1F98431c8aD98523631AE4a59f267346ea31F984",
+      "tags": ["dex", "factory", "uniswap"],
+      "notes": "Uniswap V3 Factory"
+    },
+    {
+      "alias": "uniswap-v3-router",
+      "address": "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+      "tags": ["dex", "router", "uniswap"],
+      "notes": "Uniswap V3 SwapRouter"
+    },
+    {
+      "alias": "uniswap-v3-router-02",
+      "address": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
+      "tags": ["dex", "router", "uniswap"],
+      "notes": "Uniswap V3 SwapRouter02"
+    },
+    {
+      "alias": "uniswap-v3-position-manager",
+      "address": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+      "tags": ["dex", "nft", "uniswap"],
+      "notes": "Uniswap V3 Non-fungible Position Manager"
+    },
+    {
+      "alias": "sushiswap-factory",
+      "address": "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac",
+      "tags": ["dex", "factory", "sushiswap"],
+      "notes": "SushiSwap Factory"
+    },
+    {
+      "alias": "sushiswap-router",
+      "address": "0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F",
+      "tags": ["dex", "router", "sushiswap"],
+      "notes": "SushiSwap Router"
+    },
+    {
+      "alias": "curve-3pool",
+      "address": "0xbEbc44782C7dB0a1A60Cb6fe97d0b483032FF1C7",
+      "tags": ["dex", "stableswap", "curve"],
+      "notes": "Curve 3Pool (DAI/USDC/USDT)"
+    },
+    {
+      "alias": "curve-steth-pool",
+      "address": "0xDC24316b9AE028F1497c275EB9192a3Ea0f67022",
+      "tags": ["dex", "stableswap", "curve", "staking"],
+      "notes": "Curve stETH/ETH Pool"
+    },
+    {
+      "alias": "curve-registry",
+      "address": "0x90E00ACe148ca3b23Ac1bC8C240C2a7Dd9c2d7f5",
+      "tags": ["dex", "registry", "curve"],
+      "notes": "Curve Registry - pool discovery"
+    },
+    {
+      "alias": "balancer-vault",
+      "address": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "tags": ["dex", "vault", "balancer"],
+      "notes": "Balancer V2 Vault - main contract"
+    },
+    {
+      "alias": "balancer-weighted-pool-factory",
+      "address": "0x8E9aa87E45f7e2D6462A8a495e8B8b1a8c00FEb3",
+      "tags": ["dex", "factory", "balancer"],
+      "notes": "Balancer Weighted Pool Factory"
+    },
+    {
+      "alias": "0x-exchange-proxy",
+      "address": "0xDef1C0ded9bec7F1a1670819833240f027b25EfF",
+      "tags": ["dex", "aggregator", "0x"],
+      "notes": "0x Exchange Proxy"
+    }
+  ]
+}
