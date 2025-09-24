@@ -1,4 +1,4 @@
-import crypto from 'crypto';
+import keccak from 'keccak';
 
 /**
  * Convert address to EIP-55 checksum format
@@ -15,7 +15,7 @@ export function toChecksumAddress(address) {
     throw new Error('Invalid address format');
   }
   
-  const hash = crypto.createHash('keccak256').update(cleanAddress).digest('hex');
+  const hash = keccak('keccak256').update(cleanAddress).digest('hex');
   let checksummedAddress = '0x';
   
   for (let i = 0; i < cleanAddress.length; i++) {
