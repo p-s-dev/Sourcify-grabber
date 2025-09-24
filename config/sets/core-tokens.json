@@ -1,6 +1,6 @@
 {
   "name": "core-tokens",
-  "description": "Core ERC-20 tokens",
+  "description": "Core ERC-20 tokens with highest volume and usage",
   "contracts": [
     {
       "alias": "weth9",
@@ -10,7 +10,7 @@
     },
     {
       "alias": "usdc",
-      "address": "0xA0b86a33E6411Bf3d4c0e60b48Fe3Bc6b84ED4d2",
+      "address": "0xA0b86a33E6411Bf3d4c0e60b47aE5C7bD8665Fc45",
       "tags": ["token", "stablecoin"],
       "notes": "USD Coin (USDC)"
     },
@@ -19,6 +19,60 @@
       "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
       "tags": ["token", "stablecoin"],
       "notes": "Tether USD (USDT)"
+    },
+    {
+      "alias": "dai",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "tags": ["token", "stablecoin", "decentralized"],
+      "notes": "Dai Stablecoin (DAI)"
+    },
+    {
+      "alias": "wbtc",
+      "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+      "tags": ["token", "wrapped-bitcoin"],
+      "notes": "Wrapped Bitcoin (WBTC)"
+    },
+    {
+      "alias": "uni",
+      "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
+      "tags": ["token", "governance", "dex"],
+      "notes": "Uniswap governance token"
+    },
+    {
+      "alias": "link",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "tags": ["token", "oracle"],
+      "notes": "Chainlink Token (LINK)"
+    },
+    {
+      "alias": "aave",
+      "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
+      "tags": ["token", "governance", "lending"],
+      "notes": "Aave governance token"
+    },
+    {
+      "alias": "comp",
+      "address": "0xc00e94Cb662C3520282E6f5717214004A7f26888",
+      "tags": ["token", "governance", "lending"],
+      "notes": "Compound governance token"
+    },
+    {
+      "alias": "mkr",
+      "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
+      "tags": ["token", "governance", "dai"],
+      "notes": "Maker governance token"
+    },
+    {
+      "alias": "crv",
+      "address": "0xD533a949740bb3306d119CC777fa900bA034cd52",
+      "tags": ["token", "governance", "dex"],
+      "notes": "Curve DAO Token"
+    },
+    {
+      "alias": "steth",
+      "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
+      "tags": ["token", "staking", "liquid-staking"],
+      "notes": "Lido Staked Ether (stETH)"
     }
   ]
 }

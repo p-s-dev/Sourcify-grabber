@@ -1,0 +1,96 @@
+{
+  "name": "infrastructure",
+  "description": "Core infrastructure contracts including multisigs, ENS, oracles, and governance",
+  "contracts": [
+    {
+      "alias": "gnosis-safe-singleton",
+      "address": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552",
+      "tags": ["multisig", "gnosis", "safe"],
+      "notes": "Gnosis Safe Singleton - main implementation"
+    },
+    {
+      "alias": "gnosis-safe-proxy-factory",
+      "address": "0xa6B71E26C5e0845f74c812102Ca7114b6a896AB2",
+      "tags": ["multisig", "gnosis", "factory"],
+      "notes": "Gnosis Safe Proxy Factory"
+    },
+    {
+      "alias": "gnosis-safe-multisend",
+      "address": "0xA238CBeb142c10Ef7Ad8442C6D1f9E89e07e7761",
+      "tags": ["multisig", "gnosis", "batch"],
+      "notes": "Gnosis Safe Multi Send"
+    },
+    {
+      "alias": "ens-registry",
+      "address": "0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e",
+      "tags": ["ens", "registry", "naming"],
+      "notes": "ENS Registry - Ethereum Name Service"
+    },
+    {
+      "alias": "ens-public-resolver",
+      "address": "0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63",
+      "tags": ["ens", "resolver", "naming"],
+      "notes": "ENS Public Resolver"
+    },
+    {
+      "alias": "ens-reverse-registrar",
+      "address": "0x084b1c3C81545d370f3634392De611CaaBFf8148",
+      "tags": ["ens", "registrar", "reverse"],
+      "notes": "ENS Reverse Registrar"
+    },
+    {
+      "alias": "ens-eth-registrar-controller",
+      "address": "0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5",
+      "tags": ["ens", "registrar", "controller"],
+      "notes": "ENS ETH Registrar Controller"
+    },
+    {
+      "alias": "chainlink-eth-usd-feed",
+      "address": "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419",
+      "tags": ["oracle", "chainlink", "price-feed"],
+      "notes": "Chainlink ETH/USD Price Feed"
+    },
+    {
+      "alias": "chainlink-btc-usd-feed",
+      "address": "0xF4030086522a5bEEa4988F8cA5B36dbC97BeE88c",
+      "tags": ["oracle", "chainlink", "price-feed"],
+      "notes": "Chainlink BTC/USD Price Feed"
+    },
+    {
+      "alias": "chainlink-link-usd-feed",
+      "address": "0x2c1d072e956AFFC0D435Cb7AC38EF18d24d9127c",
+      "tags": ["oracle", "chainlink", "price-feed"],
+      "notes": "Chainlink LINK/USD Price Feed"
+    },
+    {
+      "alias": "timelock-controller",
+      "address": "0x0000000000000000000000000000000000000000",
+      "tags": ["governance", "timelock", "openzeppelin"],
+      "notes": "OpenZeppelin TimelockController (example address)"
+    },
+    {
+      "alias": "transparent-upgradeable-proxy",
+      "address": "0x0000000000000000000000000000000000000000",
+      "tags": ["proxy", "upgradeable", "openzeppelin"],
+      "notes": "OpenZeppelin Transparent Upgradeable Proxy (example)"
+    },
+    {
+      "alias": "beacon-proxy",
+      "address": "0x0000000000000000000000000000000000000000",
+      "tags": ["proxy", "beacon", "openzeppelin"],
+      "notes": "OpenZeppelin Beacon Proxy (example)"
+    },
+    {
+      "alias": "ethereum-deposit-contract",
+      "address": "0x00000000219ab540356cBB839Cbe05303d7705Fa",
+      "tags": ["staking", "eth2", "deposit"],
+      "notes": "Ethereum 2.0 Deposit Contract"
+    },
+    {
+      "alias": "rocket-pool-deposit",
+      "address": "0xDD3f50F8A6CafbE9b31a427582963f465E745AF8",
+      "tags": ["staking", "rocket-pool", "liquid-staking"],
+      "notes": "Rocket Pool Deposit Pool"
+    }
+  ]
+}

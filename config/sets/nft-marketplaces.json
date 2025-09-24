@@ -1,0 +1,96 @@
+{
+  "name": "nft-marketplaces",
+  "description": "NFT marketplaces and major NFT collections",
+  "contracts": [
+    {
+      "alias": "opensea-seaport-1-5",
+      "address": "0x00000000000000ADc04C56Bf30aC9d3c0aAF14dC",
+      "tags": ["nft", "marketplace", "opensea"],
+      "notes": "OpenSea Seaport 1.5"
+    },
+    {
+      "alias": "opensea-seaport-1-4",
+      "address": "0x00000000000001ad428e4906aE43D8F9852d0dD6",
+      "tags": ["nft", "marketplace", "opensea"],
+      "notes": "OpenSea Seaport 1.4"
+    },
+    {
+      "alias": "opensea-conduit-controller",
+      "address": "0x00000000F9490004C11Cef243f5400493c00Ad63",
+      "tags": ["nft", "marketplace", "opensea"],
+      "notes": "OpenSea Conduit Controller"
+    },
+    {
+      "alias": "looksrare-exchange",
+      "address": "0x59728544B08AB483533076417FbBB2fD0B17CE3a",
+      "tags": ["nft", "marketplace", "looksrare"],
+      "notes": "LooksRare Exchange"
+    },
+    {
+      "alias": "x2y2-exchange",
+      "address": "0x74312363e45DCaBA76c59ec49a7Aa8A65a67EeD3",
+      "tags": ["nft", "marketplace", "x2y2"],
+      "notes": "X2Y2 Exchange"
+    },
+    {
+      "alias": "blur-exchange",
+      "address": "0x000000000000Ad05Ccc4F10045630fb830B95127",
+      "tags": ["nft", "marketplace", "blur"],
+      "notes": "Blur Exchange"
+    },
+    {
+      "alias": "foundation-market",
+      "address": "0xcDA72070E455bb31C7690a170224Ce43623d0B6f",
+      "tags": ["nft", "marketplace", "foundation"],
+      "notes": "Foundation NFT Market"
+    },
+    {
+      "alias": "rarible-exchange-v2",
+      "address": "0x9757F2d2b135150BBeb65308D4a91804107cd8D6",
+      "tags": ["nft", "marketplace", "rarible"],
+      "notes": "Rarible Exchange V2"
+    },
+    {
+      "alias": "cryptopunks",
+      "address": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB",
+      "tags": ["nft", "collection", "cryptopunks"],
+      "notes": "CryptoPunks - original NFT collection"
+    },
+    {
+      "alias": "cryptopunks-market",
+      "address": "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB",
+      "tags": ["nft", "marketplace", "cryptopunks"],
+      "notes": "CryptoPunks Market"
+    },
+    {
+      "alias": "bored-ape-yacht-club",
+      "address": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+      "tags": ["nft", "collection", "bayc"],
+      "notes": "Bored Ape Yacht Club"
+    },
+    {
+      "alias": "mutant-ape-yacht-club",
+      "address": "0x60E4d786628Fea6478F785A6d7e704777c86a7c6",
+      "tags": ["nft", "collection", "mayc"],
+      "notes": "Mutant Ape Yacht Club"
+    },
+    {
+      "alias": "azuki",
+      "address": "0xED5AF388653567Af2F388E6224dC7C4b3241C544",
+      "tags": ["nft", "collection", "azuki"],
+      "notes": "Azuki NFT Collection"
+    },
+    {
+      "alias": "doodles",
+      "address": "0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e",
+      "tags": ["nft", "collection", "doodles"],
+      "notes": "Doodles NFT Collection"
+    },
+    {
+      "alias": "art-blocks-curated",
+      "address": "0x059EDD72Cd353dF5106D2B9cC5ab83a52287aC3a",
+      "tags": ["nft", "collection", "artblocks"],
+      "notes": "Art Blocks Curated - generative art"
+    }
+  ]
+}
