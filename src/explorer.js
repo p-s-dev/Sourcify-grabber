@@ -192,12 +192,20 @@ export class ExplorerClient {
    * @returns {string} Explorer name
    */
   getExplorerName(apiBase) {
-    if (apiBase.includes('etherscan.io')) return 'Etherscan';
-    if (apiBase.includes('polygonscan.com')) return 'Polygonscan';
-    if (apiBase.includes('arbiscan.io')) return 'Arbiscan';
-    if (apiBase.includes('optimistic.etherscan.io')) return 'Optimism Etherscan';
-    if (apiBase.includes('basescan.org')) return 'Basescan';
-    return 'Unknown Explorer';
+    try {
+      const url = new URL(apiBase);
+      const hostname = url.hostname.toLowerCase();
+      
+      if (hostname === 'api.etherscan.io') return 'Etherscan';
+      if (hostname === 'api.polygonscan.com') return 'Polygonscan';
+      if (hostname === 'api.arbiscan.io') return 'Arbiscan';
+      if (hostname === 'api-optimistic.etherscan.io') return 'Optimism Etherscan';
+      if (hostname === 'api.basescan.org') return 'Basescan';
+      
+      return `Explorer (${hostname})`;
+    } catch (error) {
+      return 'Unknown Explorer';
+    }
   }
 }
 
