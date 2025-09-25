@@ -1,69 +1,64 @@
 {
-  "chains": {
-    "ethereum": {
+  "chains": [
+    {
       "chainId": 1,
+      "chainName": "ethereum",
       "rpcUrl": "https://ethereum.publicnode.com",
-      "sourcifyChainSupport": true,
-      "explorerApiBase": "https://api.etherscan.io/api",
-      "explorerApiKeyRef": "ETHERSCAN_API_KEY",
       "sourcifyRepoUrls": [
         "https://repo.sourcify.dev"
       ],
       "ipfsGateways": [
         "https://ipfs.io/ipfs"
-      ]
+      ],
+      "trackedContracts": []
     },
-    "polygon": {
+    {
       "chainId": 137,
+      "chainName": "polygon",
       "rpcUrl": "https://polygon.publicnode.com",
-      "sourcifyChainSupport": true,
-      "explorerApiBase": "https://api.polygonscan.com/api",
-      "explorerApiKeyRef": "POLYGONSCAN_API_KEY",
       "sourcifyRepoUrls": [
         "https://repo.sourcify.dev"
       ],
       "ipfsGateways": [
         "https://ipfs.io/ipfs"
-      ]
+      ],
+      "trackedContracts": []
     },
-    "arbitrum": {
+    {
       "chainId": 42161,
+      "chainName": "arbitrum",
       "rpcUrl": "https://arbitrum.publicnode.com",
-      "sourcifyChainSupport": true,
-      "explorerApiBase": "https://api.arbiscan.io/api",
-      "explorerApiKeyRef": "ARBISCAN_API_KEY",
       "sourcifyRepoUrls": [
         "https://repo.sourcify.dev"
       ],
       "ipfsGateways": [
         "https://ipfs.io/ipfs"
-      ]
+      ],
+      "trackedContracts": []
     },
-    "optimism": {
+    {
       "chainId": 10,
+      "chainName": "optimism",
       "rpcUrl": "https://optimism.publicnode.com",
-      "sourcifyChainSupport": true,
-      "explorerApiBase": "https://api-optimistic.etherscan.io/api",
-      "explorerApiKeyRef": "OPTIMISMSCAN_API_KEY",
       "sourcifyRepoUrls": [
         "https://repo.sourcify.dev"
       ],
       "ipfsGateways": [
         "https://ipfs.io/ipfs"
-      ]
+      ],
+      "trackedContracts": []
     },
-    "base": {
+    {
       "chainId": 8453,
+      "chainName": "base",
       "rpcUrl": "https://base.publicnode.com",
-      "sourcifyChainSupport": true,
-      "explorerApiBase": "https://api.basescan.org/api",
-      "explorerApiKeyRef": "BASESCAN_API_KEY",
       "sourcifyRepoUrls": [
         "https://repo.sourcify.dev"
       ],
       "ipfsGateways": [
         "https://ipfs.io/ipfs"
-      ]
+      ],
+      "trackedContracts": []
     }
-  }
+  ]
 }
