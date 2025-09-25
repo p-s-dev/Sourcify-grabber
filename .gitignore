@@ -4,12 +4,14 @@ npm-debug.log*
 package-lock.json
 
 # Runtime data
-data/
 logs/
-cache/
-exports/
-incoming/
+.cache/
 docker-data/
+
+# Keep ephemeral runtime artifacts excluded
+tmp/
+*.tmp
+*.temp
 
 # Environment variables
 .env

@@ -12,40 +12,27 @@ const chainsSchema = {
   type: 'object',
   properties: {
     chains: {
-      type: 'array',
-      items: {
-        type: 'object',
-        properties: {
-          chainId: { type: 'number' },
-          chainName: { type: 'string' },
-          rpcUrl: { type: 'string' },
-          sourcifyRepoUrls: {
-            type: 'array',
-            items: { type: 'string' }
-          },
-          ipfsGateways: {
-            type: 'array',
-            items: { type: 'string' }
-          },
-          trackedContracts: {
-            type: 'array',
-            items: {
-              type: 'object',
-              properties: {
-                alias: { type: 'string' },
-                address: { type: 'string' },
-                tags: {
-                  type: 'array',
-                  items: { type: 'string' }
-                },
-                expectedImplementation: { type: 'string' },
-                notes: { type: 'string' }
-              },
-              required: ['alias', 'address']
+      type: 'object',
+      patternProperties: {
+        '^[a-z0-9-]+$': {
+          type: 'object',
+          properties: {
+            chainId: { type: 'number' },
+            rpcUrl: { type: 'string' },
+            sourcifyChainSupport: { type: 'boolean' },
+            explorerApiBase: { type: 'string' },
+            explorerApiKeyRef: { type: 'string' },
+            sourcifyRepoUrls: {
+              type: 'array',
+              items: { type: 'string' }
+            },
+            ipfsGateways: {
+              type: 'array',
+              items: { type: 'string' }
             }
-          }
-        },
-        required: ['chainId', 'chainName', 'sourcifyRepoUrls', 'trackedContracts']
+          },
+          required: ['chainId', 'sourcifyChainSupport', 'sourcifyRepoUrls']
+        }
       }
     }
   },
@@ -179,8 +166,8 @@ class ConfigManager {
       
       this._cachedConfig = config;
       logger.debug('Loaded chains configuration', { 
-        chainCount: config.chains.length,
-        chains: config.chains.map(c => `${c.chainName}(${c.chainId})`)
+        chainCount: Object.keys(config.chains).length,
+        chains: Object.entries(config.chains).map(([name, cfg]) => `${name}(${cfg.chainId})`)
       });
       
       return config;
@@ -213,17 +200,28 @@ class ConfigManager {
   async getChainConfig(identifier) {
     const config = await this.loadChainsConfig();
     
-    const chain = config.chains.find(c => 
-      c.chainId === identifier || 
-      c.chainId === parseInt(identifier) || 
-      c.chainName === identifier
-    );
-    
-    if (!chain) {
-      throw new Error(`Chain not found: ${identifier}`);
+    // Look for chain by name first
+    if (config.chains[identifier]) {
+      return {
+        chainName: identifier,
+        ...config.chains[identifier]
+      };
     }
     
-    return chain;
+    // Look for chain by chainId
+    const chainEntry = Object.entries(config.chains).find(([name, cfg]) => 
+      cfg.chainId === identifier || cfg.chainId === parseInt(identifier)
+    );
+    
+    if (chainEntry) {
+      const [chainName, chainConfig] = chainEntry;
+      return {
+        chainName,
+        ...chainConfig
+      };
+    }
+    
+    throw new Error(`Chain not found: ${identifier}`);
   }
 
   /**
