@@ -1,0 +1,30 @@
+{
+  "name": "Sourcify Grabber Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-json"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "sh"
+      }
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "sourcify",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder}/data,target=/workspace/data,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/exports,target=/workspace/exports,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/logs,target=/workspace/logs,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/cache,target=/workspace/cache,type=bind,consistency=cached"
+  ]
+}

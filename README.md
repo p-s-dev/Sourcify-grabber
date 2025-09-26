@@ -181,7 +181,27 @@ The application creates a deterministic directory structure:
 
 ## Docker Usage
 
-### Build and Run
+This project uses a simplified Docker approach with two main use cases:
+
+### Development Container (Recommended)
+
+For local development, use the VS Code Dev Container:
+
+```bash
+# If using VS Code
+# Ctrl+Shift+P → "Dev Containers: Reopen in Container"
+
+# Or manually with Docker Compose
+# Note: The dev container automatically installs dependencies and sets up the environment
+```
+
+The dev container provides:
+- Node.js 18+ with development tools
+- Automatic dependency installation
+- Volume mapping for persistent data
+- Development-friendly environment variables
+
+### Production Build and Run
 
 ```bash
 # Build Docker image
@@ -205,6 +225,10 @@ docker run --rm \
 
 The Docker container maps volumes to preserve data on the host:
 - `docker-data/` contains all persistent data (contracts, exports, logs)
+
+## Docker Simplification
+
+This project now uses a single dev container for local development. All orchestration for sub-services (e.g., Airflow, Redis, Postgres) has been removed to reduce complexity. The application is designed to be self-contained and does not require additional services for basic operation.
 
 ## Examples
 

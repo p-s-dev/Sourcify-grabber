@@ -11,7 +11,7 @@
     "start": "node src/cli.js --help",
     "clean": "rm -rf data/ cache/ logs/ exports/",
     "lint": "echo 'Linting would run here'",
-    "test": "node --test test/**/*.test.js",
+    "test": "node --test test/*.test.js",
     "build": "echo 'No build step needed for pure Node.js'",
     "demo": "bash scripts/demo.sh",
     "init-chain": "node src/cli.js init-chain",
