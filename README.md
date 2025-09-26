@@ -181,30 +181,44 @@ The application creates a deterministic directory structure:
 
 ## Docker Usage
 
-### Build and Run
+This project uses a simplified Docker approach with a single development container for local development.
+
+### Development Container
+
+For local development, use the VS Code Dev Container:
 
 ```bash
-# Build Docker image
-docker build -t sourcify-grabber .
-
-# Run with volume mapping
-docker run --rm \
-  -v $(pwd)/docker-data:/app/data \
-  -v $(pwd)/docker-data:/app/exports \
-  sourcify-grabber --help
+# If using VS Code
+# Ctrl+Shift+P → "Dev Containers: Reopen in Container"
 ```
 
-### Using the Docker Script
+The dev container provides:
+- Node.js 18+ with development tools
+- Automatic dependency installation
+- Volume mapping for persistent data (data, exports, logs, cache directories)
+- Development-friendly environment variables (`NODE_ENV=development`, `LOG_LEVEL=debug`)
+
+### Manual Container Usage
+
+If not using VS Code, you can build and run the dev container manually:
 
 ```bash
-# Use the provided script
-./scripts/docker-run.sh --help
-./scripts/docker-run.sh init-chain --chain ethereum
-./scripts/docker-run.sh status
+# Build the dev container
+docker build -f .devcontainer/Dockerfile -t sourcify-grabber-dev .
+
+# Run the dev container with volume mapping
+docker run -it --rm \
+  -v $(pwd):/workspace \
+  -v $(pwd)/data:/workspace/data \
+  -v $(pwd)/exports:/workspace/exports \
+  -v $(pwd)/logs:/workspace/logs \
+  -v $(pwd)/cache:/workspace/cache \
+  sourcify-grabber-dev /bin/sh
 ```
 
-The Docker container maps volumes to preserve data on the host:
-- `docker-data/` contains all persistent data (contracts, exports, logs)
+## Docker Simplification
+
+This project now uses a single dev container for local development. All orchestration for sub-services (e.g., Airflow, Redis, Postgres) and production Docker configurations have been removed to reduce complexity. The application is designed to be self-contained and does not require additional services for basic operation.
 
 ## Examples
 
